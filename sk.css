@@ -1,0 +1,352 @@
+.inter-navbar {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  *{
+    font-family: "Inter";
+  }
+  body {
+      margin: 0;
+  }
+  
+  .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2px 10px;
+      font-family: "Inter";
+  }
+  
+  .logo a{
+      font-size: 25px;
+      color: white;
+      text-decoration: none;
+  }
+  
+  .logo a:hover{
+    color: #919c9f;
+  }
+/* 
+  .logo a::after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: -5px; 
+    width: 100%;
+    height: 3px; 
+    background-color: #c5afaa;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+}
+
+
+.logo a:hover::after {
+    transform: scaleX(1); 
+} */
+  .navlinks {
+      display: flex;
+      list-style-type: none;
+  }
+  
+  .navlinks li {
+      margin: 0 50px;
+      position: relative; 
+  }
+  
+  .navlinks li a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s;
+  }
+  
+  .navlinks li a:hover {
+      color: #919c9f; 
+  }
+  
+ 
+  .navlinks li a::after {
+      content: ""; 
+      position: absolute; 
+      left: 0; 
+      bottom: -5px; 
+      width: 100%;
+      height: 3px; 
+      background-color: #c5afaa;
+      transform: scaleX(0); 
+      transition: transform 0.3s ease;
+  }
+  
+ 
+  .navlinks li a:hover::after {
+      transform: scaleX(1); 
+  }
+  
+  header {
+      background-color: #b10202;
+  }
+
+  .back-opacity{
+    /* text-align: center; */
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+  .back-opacity img{
+    height: 550px;
+    position: absolute;
+    width: 60%;
+    z-index: -1;
+    
+  }
+
+  .pseudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+   
+    
+  }
+
+
+  .overlay-text{
+    z-index: +1;
+   margin-top: 100px;
+    align-self: center;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    
+    
+  }
+
+  .overlay-text h1{
+    font-size: xx-large;
+  }
+
+  .img-cont{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+
+  .img-cont img{
+    height: 400px;
+  }
+  
+ h2{
+    text-align: center;
+    color: #b10202;
+ }
+
+ .register_div{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #b10202;
+    text-align: center;
+    align-self: center;
+    color: white;
+    justify-content: center;
+    border-radius: 10px;
+    height: 200px;
+    
+ }
+
+ .register_div button{
+    border-radius: 8px;
+    font-family: "Inter";
+    width: 150px;
+    height: 25px;
+    box-shadow: 1px 1px;
+    background-color: white;
+    border: none;
+    color: #b10202;
+    align-self: center;
+ }
+
+ .head{
+    font-size: 20px;
+ }
+
+ .events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  
+ }
+
+ .events h3{
+    text-align: center;
+    color: #b10202;
+    font-size: 30px;
+ }
+
+ .events img{
+    width: 600px;
+    height: 350px;
+    align-self: center;
+ }
+ 
+ .text-cont{
+    padding: 15px;
+    text-align: center;
+    background-color: #b10202;
+    width: 800px;
+    color: white;
+    border-radius: 15px;
+    align-self: center;
+ }
+ 
+ .text-cont button{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: #b10202;
+ }
+/*footer*/
+.footer{
+    background-color: #b10202;
+    text-align: center;
+    color: #EDEAEB;
+    font-weight: 100;
+    line-height: 2rem;
+    padding: 20px;
+  }
+  .tagLineFooter{
+    font-size: 15px;
+  }
+  .brandFooter{
+    font-size: 24px;
+  }
+  .privacyPolicy{
+    color: #EDEAEB;
+  }
+  
+  .kattaThemeContinue{
+    background-image: url(/images/edgeBg.svg);
+    background-size: cover;
+    padding: 17% 15% 10% 10%;
+  }
+  .kattaThemeHeadContinue{
+    font-size:50px ;
+    font-weight: 600;
+    color: #155B53;
+    line-height: 3rem;
+  }
+  .kattaThemeContentContinue{
+    font-size: 18px;
+    font-weight: 400;
+    color: #0E2926;
+    padding: 20px;
+  }
+  .kattaThemeBgTrans{
+    position: absolute;
+  }
+  .kattaThemeHead{
+    font-size:50px ;
+    font-weight: 600;
+    color: #D9E8DD;
+    line-height: 3rem;
+  }
+  .kattaThemeContent{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ACCBB2;
+    padding: 40px;
+  }
+  .kattaThemeCol{
+    padding: 20px;
+    background-color: #112121;
+    border-radius: 20px;
+   margin-top: 70px;
+   margin-left: 20px;
+   margin-right: 30px;
+   
+  }
+  .howContent{
+    font-size:30px ;
+    font-weight: 600;
+    color: #0E2926;
+    line-height: 3rem;
+    padding: 20% 20% 0 20%;
+  }
+  .howContentVisit{
+    font-size:20px ;
+    font-weight: 500;
+    color: #155B53;
+    
+    padding: 0 20%;
+  }
+  .aHow{
+    color: #112121;
+    font-weight: 600;
+  }
+  .howTable{
+    background-color:rgb(236,213,172);
+    border-radius: 20px;
+    padding: 40px 20px;
+    margin: 20px 10px;
+  }
+  
+  .howInput{
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    align-items: center;
+    
+    border: #6ED190;
+  }
+  .howButton{
+    margin: 20px;
+    padding: 0 40px;
+    color: #0E2926;
+  }
+  .howButtonHover{
+    margin: 20px;
+    padding: 0 40px;
+    color: #BBE6C3;
+    background-color: #0E2926;
+  }
+  .edges{
+    background-image: url(/images/edgeBg.svg);
+    background-size: cover;
+    color: #112121;
+    padding: 5% 15% 10% 10%;
+  }
+  .kattaEdgesHeading{
+    color: #155B53;
+    font-size: 50px;
+    line-height: 3rem;
+    font-weight: 600; 
+    padding-bottom: 60px;
+    text-align: left;
+   
+  }
+  .kattaEdgesHead{
+    color: #155B53;
+    font-size: 30px;
+    line-height: 3rem;
+    font-weight: 500; 
+    text-align: left;
+    
+   
+  }
+  .kattaEdgesContent{
+    color: #0E2926;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .row.align-items-center{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
