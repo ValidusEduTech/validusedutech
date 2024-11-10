@@ -477,3 +477,224 @@ proflie3-right p{
   justify-content: center;
   gap: 2rem;
 }
+@media (max-width: 1024px) {
+  .navbar {
+      flex-direction: column;
+  }
+  .navlinks li {
+      margin: 0 20px;
+  }
+  .profiles, .process-item {
+      width: 100%;
+      flex-direction: column;
+  }
+  .profile1, .profile2, .profile3 {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+  }
+  .header-images img, .right-img img {
+      width: 100%;
+  }
+}
+/*Responsive*/
+
+@media (max-width: 768px) {
+  .eclectic-personalities {
+    padding: 1rem;
+  }
+
+  .eclectic-personalities h2 {
+    font-size: 1.5rem;
+  }
+
+  .ep-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .ep-p2 {
+    font-size: 1rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .process-item {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    align-items: center;
+  }
+
+  .left-text {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .right-img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+
+  .process-item button {
+    margin-top: 1rem;
+  }
+
+  .profiles {
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .profile1, .profile2, .profile3 {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile1 img, .profile2 img, .profile3 img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .profile1-right, .profile2-right, .profile3-right {
+    width: 100%;
+  }
+
+  .header h1 {
+      font-size: 2rem;
+  }
+  .navbar {
+      padding: 10px;
+  }
+  .navlinks li {
+      margin: 0 10px;
+  }
+  .profile1, .profile2, .profile3, .process-item {
+      width: 100%;
+  }
+  .process-item {
+      flex-direction: column;
+  }
+  .left-text, .right-img {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eclectic-personalities h2 {
+    font-size: 1.2rem;
+  }
+
+  .left-text {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .process-item {
+    gap: 1rem;
+  }
+
+  .process-item button {
+   
+    padding: 0.5rem;
+  }
+  .ep-p2 {
+    font-size: 0.9rem;
+  }
+  .logo a {
+      font-size: 20px;
+  }
+  .navlinks {
+      flex-direction: column;
+  }
+  .navlinks li {
+      margin: 10px 0;
+  }
+  .header h1 {
+      font-size: 1.5rem;
+  }
+  .header button {
+      width: 100%;
+  }
+  .process-item {
+      flex-direction: column;
+      width: 100%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .process-item {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .left-text {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .right-img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 1rem;
+  }
+
+  .process-item button {
+   
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .eclectic-personalities {
+    padding: 1rem; 
+  }
+
+  .eclectic-personalities h2 {
+    font-size: 1.5rem; 
+  }
+
+  .ep-text {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .ep-p2 {
+    width: 100%; 
+    padding: 1rem 1rem; 
+  }
+
+  .profiles {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .profile1, .profile2, .profile3 {
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  .profile1 img, .profile2 img, .profile3 img {
+    width: 80%; 
+    margin-bottom: 1rem;
+  }
+
+  .profile1 button, .profile2 button, .profile3 button {
+    width: 100%; 
+    margin-top: 1rem; 
+  }
+}
