@@ -10,22 +10,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
     <header>
-        <navbar class = "navbar">
-            <div class = "logo">
-                <a href = "index.html"><h3>Validus EduTech</h3></a>
-                <!-- <img src = "./"> -->
-            </div>
-            <ul class="navlinks">
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "about_html.html">About Us</a></li>
-                <li><a href = "sk.html">Students' Katta</a></li>
-                <li><a href = "ssp_html.html">Sunday Side Projects</a></li>
-                <li><a href = "#">Eclectic Personalities</a></li>
-            </ul>
-
-        </navbar>
+      <div class="navbar">
+        <div class="logo">
+          <div class = "in_a_row">
+          <a href="index.html"><h3>Validus EduTech</h3></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+        <ul class="navlinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./academics.html">Academics</a></li>
+          <li><a href="./ssp_html.html">Sunday Side Projects</a></li>
+          <li><a href="./sk.html">Students' Katta</a></li>
+          <li><a href="#">Eclectic personalities</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
     </header>
+  </header>
 
     <!-- Header Section -->
     <section class="header">
@@ -85,7 +90,7 @@
 
   <!-- Profile Building Process Section -->
   <section class="profile-building">
-      <h2>Profile Building Process</h2>
+      <h2 style="color: #b10202">Profile Building Process</h2>
       <div class="process">
           <div class="process-item">
             <div class = "left-text">
@@ -160,6 +165,11 @@
       </div>
     </div>
   </section>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.navlinks').classList.toggle('active');
+    }
+  </script>
 
     
 </body>
