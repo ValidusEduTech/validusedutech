@@ -791,9 +791,9 @@ font-style: normal;
 
 
 
-.row.align-items-center{
+.align-items-center{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 }
 
