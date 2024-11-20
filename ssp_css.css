@@ -256,3 +256,8 @@ img {
   display: inline-block;
   width: auto; 
 }
+.align-items-center{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
