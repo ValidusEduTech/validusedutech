@@ -225,14 +225,14 @@ font-style: normal;
   
  h2{
     text-align: center;
-    color: #b10202;
+    color: #A21E1F;
  }
 
  .register_div{
     width: 400px;
     display: flex;
     flex-direction: column;
-    background-color: #b10202;
+    background-color: #A21E1F;
     text-align: center;
     align-self: center;
     color: white;
@@ -250,7 +250,7 @@ font-style: normal;
     box-shadow: 1px 1px;
     background-color: white;
     border: none;
-    color: #b10202;
+    color: #A21E1F;
     align-self: center;
  }
 
@@ -268,7 +268,7 @@ font-style: normal;
 
  .events h3{
     text-align: center;
-    color: #b10202;
+    color: #A21E1F;
     font-size: 30px;
  }
 
@@ -281,7 +281,7 @@ font-style: normal;
  .text-cont{
     padding: 15px;
     text-align: center;
-    background-color: #b10202;
+    background-color: #A21E1F;
     width: 800px;
     color: white;
     border-radius: 15px;
@@ -293,7 +293,7 @@ font-style: normal;
     height: 30px;
     border: none;
     border-radius: 10px;
-    color: #b10202;
+    color: #A21E1F;
  }
 
 
@@ -585,7 +585,7 @@ font-style: normal;
   width: 400px;
   display: flex;
   flex-direction: column;
-  background-color: #b10202;
+  background-color: #A21E1F;
   text-align: center;
   align-self: center;
   color: white;
@@ -713,9 +713,9 @@ font-style: normal;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 30px !important;
+ 
   font-family: 'Inter';
-  background-color: #b10202;
+  background-color: #A21E1F;
 }
 
 .logo a {
@@ -791,7 +791,7 @@ font-style: normal;
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #b10202;
+    background-color: #A21E1F;
     padding: 10px;
     border-radius: 5px;
   }
@@ -814,7 +814,7 @@ font-style: normal;
 
 /*footer*/
 .footer{
-  background-color: #b10202;
+  background-color: #A21E1F;
   text-align: center;
   color: #EDEAEB;
   font-weight: 100;
