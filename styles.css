@@ -76,7 +76,7 @@ body {
   padding: 2rem;
   
   font-family: "Inter";
-  color: #b10202;
+  color: #A21E1F;
 }
 .header-text{
   display: flex;
@@ -89,13 +89,13 @@ body {
   align-self: center;
 }
 .header h1 {
-  color: #b10202;
+  color: #A21E1F;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .header button {
-  background-color: #b10202;
+  background-color: #A21E1F;
   color: #fff;
   padding: 0.5rem 1rem;
   border: none;
@@ -153,11 +153,11 @@ body {
 }
 
 .eclectic-personalities h2 {
-  color: #b10202;
+  color: #A21E1F;
   font-size: 1.8rem;
 }
 .eclectic-personalities .ep-p2 {
-  color: #b10202;
+  color: #A21E1F;
   
 }
 
@@ -185,7 +185,7 @@ body {
   display: flex;
   width: 600px;
   padding: 1rem;
-  background-color: #b10202;
+  background-color: #A21E1F;
   color: #fff;
   border-radius: 20px;
   text-align: center;
@@ -205,7 +205,7 @@ proflie1-right p{
 
 .profile1 button {
   background-color: #fff;
-  color: #b10202;
+  color: #A21E1F;
   padding: 0.5rem;
   border: none;
   cursor: pointer;
@@ -219,7 +219,7 @@ proflie1-right p{
   display: flex;
   width: 600px;
   padding: 1rem;
-  background-color: #b10202;
+  background-color: #A21E1F;
   color: #fff;
   border-radius: 20px;
   text-align: center;
@@ -235,7 +235,7 @@ proflie2-right p{
 
 .profile2 button {
   background-color: #fff;
-  color: #b10202;
+  color: #A21E1F;
   padding: 0.5rem;
   border: none;
   cursor: pointer;
@@ -247,7 +247,7 @@ proflie2-right p{
   display: flex;
   width: 600px;
   padding: 1rem;
-  background-color: #b10202;
+  background-color: #A21E1F;
   color: #fff;
   border-radius: 20px;
   text-align: center;
@@ -263,7 +263,7 @@ proflie3-right p{
 
 .profile3 button {
   background-color: #fff;
-  color: #b10202;
+  color: #A21E1F;
   padding: 0.5rem;
   border: none;
   cursor: pointer;
@@ -299,7 +299,7 @@ proflie3-right p{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #b10202;
+  background-color: #A21E1F;
   color: white;
   border-radius: 20px;
 }
@@ -309,7 +309,7 @@ proflie3-right p{
 }
 .process-item button {
   background-color: white;
-  color: #b10202;
+  color: #A21E1F;
   padding: 0.5rem;
   border: none;
   cursor: pointer;
@@ -379,7 +379,7 @@ proflie3-right p{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #b10202;
+  background-color: #A21E1F;
   color: white;
   border-radius: 20px;
   padding: 20px;
@@ -394,7 +394,7 @@ proflie3-right p{
 
 /*footer*/
 .footer{
-  background-color: #b10202;
+  background-color: #A21E1F;
   text-align: center;
   color: #EDEAEB;
   font-weight: 100;
@@ -777,7 +777,7 @@ font-style: normal;
   align-items: center;
   padding: 10px 20px;
   font-family: 'Inter';
-  background-color: #b10202;
+  background-color: #A21E1F;
 }
 
 .logo a {
@@ -853,7 +853,7 @@ font-style: normal;
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #b10202;
+    background-color: #A21E1F;
     padding: 10px;
     border-radius: 5px;
   }
