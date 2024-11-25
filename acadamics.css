@@ -1,3 +1,139 @@
+//navbar//
+.navlinks li {
+  margin: 0 15px;
+}
+
+.navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.navlinks li a:hover {
+  color: #919c9f;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navlinks li a:hover {
+  color: #919c9f;
+}
+
+.navlinks li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: grey;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.navlinks li a:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* Responsive styles */
+/* @media (max-width: 768px) {
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #b10202;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navlinks.active {
+    display: flex;
+  }
+
+  .navlinks li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  } */
+/* } */
+
+/*navbar*/
+.navbar{
+  background-color: #A21E1F;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing:auto;
+  font-style: normal;
+  font-weight:normal;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar Links - Hover Animation */
+.navbar-nav .nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #F5A8A9; /* Highlight color */
+}
+
+/* Underline Animation (Expands from center) */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px; /* Adjust to position the underline */
+  left: 50%; /* Start from the center */
+  background-color: #F5A8A9;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Expand to full width */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+}
+
+
 h1{
     color: #b10202;
     position: absolute;
