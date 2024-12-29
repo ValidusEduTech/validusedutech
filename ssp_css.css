@@ -4,8 +4,8 @@
     font-optical-sizing:auto;
     font-style: normal;
     font-weight:normal;
-    padding-top: 35%;
-    font-size: 43px;
+    justify-content: center;
+    padding-top: 13%;
 }
 
 body{
@@ -52,12 +52,28 @@ body{
 
 .Spic{
     width: 80%;
+    height: 100%;
     border-radius: 15%;
 }
 
 .pic{
-    width: 90%;
-    border-radius: 15%;
+    width: 80%;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.picture{
+  transition: .2s;
+}
+
+.picture:hover{
+  transform: scale(1.1); 
+   z-index: 2;
+}
+
+.pic:hover{
+  transform: scale(1.1); 
+   z-index: 2;
 }
 
 
@@ -66,10 +82,13 @@ body{
     padding: 1rem;
 }
 
+button:hover{
+  transform: scale(0.9);
+  z-index: 2;
+}
 
-img {
-    max-width: 100%;
-    height: auto;
+button{
+  transition: .2s;
 }
 
 
@@ -245,10 +264,7 @@ img {
       font-size: 1rem;
   }
 
-  img {
-      width: 100%; 
-      justify-content: center;
-  }
+  
 
 .button button {
   padding: 0.75rem 2rem;
