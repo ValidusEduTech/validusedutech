@@ -2,40 +2,108 @@
 /* General styles */
 
 
-.inter-bod{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-body {
+/* Reset and Base Styles */
+* {
   margin: 0;
-  font-family: 'Inter';
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.navbar{
-  background-color: #A21E1F;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing:auto;
-  font-style: normal;
-  font-weight:normal;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: space-evenly;
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--background-light);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
-.nav-item {
-  list-style: none;
-}
-.nav-link {
-  text-decoration: none;
-  color: white;
+
+/* Smooth Scrolling and Typography */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Navbar Links - Hover Animation */
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Navigation Styles */
+header {
+  background-color: var(--white);
+  color: var(--text-primary);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+ 
+
+  background-color: #A21E1F;
+  color: white;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-left: auto;
+  
+}
+
+.nav-menu li {
+  margin-left: 25px;
+  color: #fff;
+  
+}
+
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--primary-color);
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 .navbar-nav .nav-link {
   position: relative;
   color: white;
@@ -60,15 +128,10 @@ body {
   transition: width 0.3s ease;
 }
 
+
 .navbar-nav .nav-link:hover::after {
   width: 100%; /* Expand to full width */
 }
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-
 
   /* Header Section */
 .header {
@@ -177,8 +240,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: 5rem;
   margin-top: 2rem;
+  margin: 100px;
 }
 
 .profile1 {
@@ -194,6 +258,7 @@ body {
 proflie1-right p{
   color: #fff;
 }
+
 .profile1 img {
   width: 200px;
   border-radius: 20px;
@@ -274,6 +339,7 @@ proflie3-right p{
 .profile-building {
   padding: 2rem;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .process {
@@ -392,6 +458,23 @@ proflie3-right p{
   object-fit: cover;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+.header, .header-images, .eclectic-personalities {
+  margin: 2rem 0;
+}
+
+.header-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /*footer*/
 .footer{
   background-color: #A21E1F;
@@ -406,6 +489,7 @@ proflie3-right p{
 }
 .brandFooter{
   font-size: 24px;
+  margin-bottom: 0px;
 }
 .privacyPolicy{
   color: #EDEAEB;
@@ -418,6 +502,7 @@ proflie3-right p{
   justify-content: center;
   gap: 2rem;
 }
+
 
 
 /*responsive styles*/
@@ -622,6 +707,11 @@ proflie3-right p{
     margin-top: 1rem; 
   }
 }
+.large-quote {
+  font-size: 3em; /* Adjust size as needed */
+  font-weight: bold;
+}
+
 
 @media (max-width: 825px) {
   
@@ -640,125 +730,7 @@ proflie3-right p{
   }
 }
 
-/*updated navbar*/
-/*updated navbar*/
-/* General styles */
-/* body {
-  margin: 0;
-}
 
-
-.inter-navbar {
-font-family: "Inter", sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
-}
-.navbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 10px 20px;
-  font-family: 'Inter';
-  background-color: #b10202;
-}
-
-.logo a {
-  font-size: 25px;
-  color: white;
-  text-decoration: none;
-}
-
-.navlinks {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navlinks li {
-  margin: 0 15px;
-}
-
-.navlinks li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.navlinks li a:hover {
-  color: #919c9f;
-}
-
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-}
-
-.navlinks li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  position: relative;
-  transition: color 0.3s;
-}
-
-.navlinks li a:hover {
-  color: #919c9f;
-}
-
-.navlinks li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 3px;
-  background-color: grey;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.navlinks li a:hover::after {
-  transform: scaleX(1);
-}
-
-
-/* Responsive styles */
-/* @media (max-width: 768px) {
-  .navlinks {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #b10202;
-    padding: 10px;
-    border-radius: 5px;
-  }
-
-  .navlinks.active {
-    display: flex;
-  }
-
-  .navlinks li {
-    margin: 10px 0;
-  }
-
-  .hamburger {
-    display: block;
-    
-  }
-} */ 
-
-
-/*updated 2*/
-
-/* General styles */
 body {
   margin: 0;
 }
@@ -978,4 +950,51 @@ font-style: normal;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  
 }
+
+
+
+/* Style for the dropdown button */
+
+
+
+
+/* Profile Building section styles */
+.profile-building {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+
+.bold-text {
+  font-weight: bold;
+}
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Adjust this value to increase/decrease the gap */
+}
+
+
+.profile1, .profile2, .profile3 {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 20px; /* Optional for spacing */
+}
+
+.proflie1-img, .proflie2-img, .proflie3-img {
+  width: 150px; /* Adjust image size */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.proflie1-right, .profile2-right, .profile3-right {
+  flex: 1;
+}
+
+.profile1 img, .profile2 img, .profile3 img {
+  width: 200px; /* Adjust the image to fit the container */
+  height: auto;
+}
+
