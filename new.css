@@ -1,0 +1,209 @@
+/* Mild and Professional Color Palette */
+:root {
+    --primary-color: #4A6882;      /* Soft slate blue */
+    --secondary-color: #7E9AB0;    /* Muted blue-gray */
+    --background-light: #F5F7FA;   /* Soft off-white */
+    --text-primary: #2C3E50;        /* Deep navy */
+    --text-secondary: #546E7A;     /* Subdued gray-blue */
+    --accent-color: #5D7B9D;       /* Soft muted blue */
+    --white: #FFFFFF;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background-light);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth Scrolling and Typography */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Navigation Styles */
+header {
+    background-color: var(--white);
+    color: var(--text-primary);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+
+/* Sections */
+.section {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#home {
+    background-color: var(--background-light);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#home h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+#home p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+}
+
+#about, #profiles { 
+    background-color: var(--white); 
+}
+
+#academics, #students-katta { 
+    background-color: var(--background-light); 
+}
+
+#sunday-projects {
+    background-color: rgba(74,104,130,0.05);
+}
+
+/* Card-like Section Styles */
+.section .container {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    padding: 50px;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--white);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+    }
+
+    .nav-menu li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .nav-toggle-label {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Hamburger Menu Icon */
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: var(--text-primary);
+        height: 2px;
+        width: 25px;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before { bottom: 8px; }
+    .nav-toggle-label span::after { top: 8px; }
+}
+
+/* Typography Responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Subtle Animations */
+@keyframes subtle-rise {
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section .container {
+    animation: subtle-rise 0.8s ease-out;
+}
