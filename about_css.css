@@ -271,3 +271,23 @@ body {
       font-size: 14px;
   }
 }
+.cont {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* For larger screens, you can adjust padding if needed */
+@media (min-width: 768px) {
+    .cont{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* For smaller screens, maintain consistent padding */
+@media (max-width: 767px) {
+    .cont{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
