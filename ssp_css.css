@@ -58,7 +58,7 @@ body{
 
 .pic{
     width: 80%;
-    border-radius: 30px;
+    border-radius: 5%;
     transition: .5s;
 }
 
