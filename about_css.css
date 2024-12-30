@@ -150,3 +150,124 @@
   transform: scale(1.1);
   z-index: 2;
 }
+
+/* Base styles for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the container */
+.container {
+  margin-top: 30px;
+}
+
+/* Style for the cards */
+.card {
+  margin: 10px 0;
+  border: 2px solid #A21E1F;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Image styling */
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Text inside cards */
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-text h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card-text p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.card-body a {
+  margin: 0 10px;
+  color: #A21E1F;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 1200px) {
+  .col {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .col {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .card {
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .card {
+      width: 100%;
+  }
+
+  .card-img-top {
+      height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+      padding: 10px;
+  }
+
+  .card {
+      width: 100%;
+  }
+
+  .card-img-top {
+      height: 120px;
+  }
+
+  .card-body {
+      padding: 15px;
+  }
+
+  .card-text h4 {
+      font-size: 18px;
+  }
+
+  .card-text p {
+      font-size: 14px;
+  }
+}
