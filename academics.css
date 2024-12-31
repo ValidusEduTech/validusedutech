@@ -382,8 +382,8 @@
     padding: 1rem 9%;
     margin-top:5rem;
     position: relative;
-    row-gap: 30%;
-    column-gap: 10%;
+    row-gap: 5%;
+    column-gap: 5%;
   }
 
   .counter{
