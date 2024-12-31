@@ -1,3 +1,4 @@
+
 /* Reset styles specifically for timeline */
 .timeline *{
     margin: 0;
@@ -18,11 +19,12 @@
     font-style: normal;
     font-weight: normal;
     color: white;
+
 }
 
 .navbar-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 100%;
 }
 .nav-item {
@@ -362,94 +364,13 @@
     color: #EDEAEB;
   }
 
-  .counter-wrapper{
-    background-color: #A21E1F;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 1rem 9%;
-    margin-top:5rem;
-    position: relative;
-    row-gap: 30%;
-    column-gap: 10%;
-  }
+  
 
-  .counter{
-    background-color: white;
-    border-radius: 10px;
-    padding-top:8% ;
-    padding-bottom:8% ;
-    text-align: center;
-    color: #A21E1F;
-    z-index: 2;
-    position: relative;
-  }
-
-  .counter-wrapper .heading{
-    grid-template-columns:1fr;
-  }
-
-  .text{
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: normal;
-  }
-
-  .counter p{
-    font-size: 1.4rem;
-    font-weight: 470;
-}
-
-/* Medium screens (tablets) */
-@media (max-width: 992px) {
-    .counter {
-        flex: 1 1 calc(33.33% - 2rem); /* Adjust to fit 3 counters per row */
-    }
-
-    .counter h1 {
-        font-size: 2rem; /* Slightly smaller font for tablets */
-    }
-
-    .counter p {
-        font-size: 0.9rem; /* Adjust paragraph size */
-    }
-}
-
-/* Small screens (mobile devices) */
-@media (max-width: 768px) {
-    .counter-wrapper {
-        flex-direction: column; /* Stack counters vertically */
-        align-items: center;
-    }
-
-    .counter {
-        flex: 1 1 100%; /* Full width for each counter */
-        margin-bottom: 1rem; /* Add spacing between stacked counters */
-    }
-
-    .counter h1 {
-        font-size: 1.8rem; /* Smaller font size for mobile */
-    }
-
-    .counter p {
-        font-size: 0.8rem; /* Smaller paragraph size */
-    }
-}
-
-/* Extra small screens (very narrow devices) */
-@media (max-width: 576px) {
-    .counter h1 {
-        font-size: 1.5rem; /* Further reduce font size */
-    }
-
-    .counter p {
-        font-size: 0.7rem; /* Further reduce paragraph size */
-    }
-
-    .counter-wrapper {
-        gap: 1rem; /* Reduce spacing between counters */
-    }
+  .cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between sections */
 }
