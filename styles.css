@@ -972,9 +972,7 @@ font-style: normal;
 .bold-text {
   font-weight: bold;
 }
-.navbar-nav .nav-item {
-  margin-right: 30px; /* Adjust this value to increase/decrease the gap */
-}
+
 
 
 .profile1, .profile2, .profile3 {
