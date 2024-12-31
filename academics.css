@@ -1,3 +1,4 @@
+
 /* Reset styles specifically for timeline */
 .timeline *{
     margin: 0;
@@ -18,11 +19,12 @@
     font-style: normal;
     font-weight: normal;
     color: white;
+
 }
 
 .navbar-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 100%;
 }
 .nav-item {
@@ -361,3 +363,19 @@
   .privacyPolicy{
     color: #EDEAEB;
   }
+
+  
+.navbar-brand {
+    margin-right: auto;
+  }
+  .navbar-nav {
+    gap: 1.5rem; /* Adds space between the nav links */
+  }
+  .cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between sections */
+}
