@@ -1,3 +1,4 @@
+
 /* Reset styles specifically for timeline */
 .timeline *{
     margin: 0;
@@ -18,11 +19,12 @@
     font-style: normal;
     font-weight: normal;
     color: white;
+
 }
 
 .navbar-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 100%;
 }
 .nav-item {
@@ -244,7 +246,7 @@
 .hero {
     position: relative;
     min-height: 100vh;
-    background-color: white;
+    background-color: white
     overflow: hidden;
 }
 
@@ -362,66 +364,13 @@
     color: #EDEAEB;
   }
 
-  .counter-wrapper{
-    background-color: #A21E1F;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 1rem 9%;
-    margin-top:5rem;
-    position: relative;
-    row-gap: 30%;
-    column-gap: 10%;
-  }
   
-  .counter{
-    background-color: white;
-    border-radius: 10px;
-    padding-top:8% ;
-    padding-bottom:8% ;
-    text-align: center;
-    color: #A21E1F;
-    z-index: 2;
-    position: relative;
-  }
 
-  .counter-wrapper .heading{
-    grid-template-columns:1fr;
-  }
-
-  .text{
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: normal;
-  }
-
-.counter p{
-    font-size: 1.4rem;
-    font-weight: 470;
-}
-
-@media (max-width: 991px){
-    html{
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 768px){
-    .counter-wrapper{
-        grid-template-columns: repeat(2,1fr);
-        grid-row-gap: 8rem;
-
-    }
-}
-
-@media (max-width: 450px){
-    html{
-        font-size: 50%;
-    }
-    .counter-wrapper{
-        grid-template-columns: 1fr;
-    }
+  .cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between sections */
 }
