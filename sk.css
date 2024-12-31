@@ -715,12 +715,7 @@ font-style: normal;
 
 
 
-.navbar-brand {
-  margin-right: auto;
-}
-.navbar-nav {
-  gap: 1.5rem; /* Adds space between the nav links */
-}
+
 
 .Container {
   width: 100%;
