@@ -108,7 +108,7 @@ button{
 
 .navbar-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   width: 100%;
 }
 .nav-item {
@@ -277,3 +277,10 @@ button{
   justify-content: center;
   gap: 2rem;
 }
+
+.navbar-brand {
+    margin-right: auto;
+  }
+  .navbar-nav {
+    gap: 1.5rem; /* Adds space between the nav links */
+  }
