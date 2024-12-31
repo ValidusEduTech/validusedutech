@@ -831,3 +831,6 @@ font-style: normal;
       opacity: 0.3; /* Further reduce opacity on very small screens */
   }
 }
+.navbar-nav {
+    gap : 0rem !important;
+}
