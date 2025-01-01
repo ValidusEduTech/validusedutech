@@ -965,7 +965,7 @@ font-style: normal;
 .profile-building {
   padding: 10px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 
@@ -979,6 +979,8 @@ font-style: normal;
 .profile1, .profile2, .profile3 {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: 0px;
   gap: 2.5rem;
   margin-bottom: 20px; /* Optional for spacing */
 }
@@ -995,6 +997,7 @@ font-style: normal;
 .profile1 img, .profile2 img, .profile3 img {
   width: 200px; /* Adjust the image to fit the container */
   height: auto;
+  margin-left: 20px;
 }
 
 /**/
@@ -1060,3 +1063,364 @@ button {
   padding: 0.5rem 1rem;
 }
 
+
+  /* General styles for the profile boxes */
+  .profiles {
+    display: flex;
+    gap: 20px; /* Add spacing between the boxes */
+  }
+
+  .profile1, .profile2, .profile3 {
+    flex: 1; /* Ensure equal width for all boxes */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #A21E1F;
+    text-align: center; /* Keep text centered */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+
+  /* Make images responsive */
+  .profile1 img, .profile2 img, .profile3 img {
+    max-width: 100%; /* Scale images within the box */
+    height: auto;
+   
+    margin-bottom: 10px;
+  }
+
+  /* Buttons styling */
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #b10202;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    .profiles {
+      flex-direction: column; /* Stack boxes vertically */
+      gap: 20px; /* Maintain spacing between boxes */
+    }
+    .profile1, .profile2, .profile3 {
+      width: 200px; /* Further reduce padding for smaller screens */
+    }
+  }
+
+/* Fix container width */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure images scale properly */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Fix for Validus header */
+.validus-header {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Development Center section */
+.development-center {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;  /* Add padding inside the container instead of margins */
+}
+
+/* Button styling */
+.know-process-button {
+  width: 100%;
+  max-width: 300px;  /* Or your desired maximum width */
+  margin: 20px auto;
+  display: block;
+}
+
+/* Media container for student images */
+.media-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset any bootstrap or framework overrides */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col, [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  /* Header section */
+  .header-text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+
+  .p1 {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Header images */
+  .header-images {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .image-container {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .side-image, .middle-image {
+    width: 100%;
+    max-width: 400px;
+    position: static;
+    margin: 0 auto;
+  }
+
+  /* Eclectic personalities section */
+  .ep-p2 {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Profiles section */
+  .profiles {
+    margin: 40px 20px;
+    gap: 40px;
+  }
+
+  .profile1, .profile2, .profile3 {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .profile1 img, .profile2 img, .profile3 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .profile1-right, .profile2-right, .profile3-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Process section */
+  .process {
+    margin: 40px 20px;
+    gap: 40px;
+  }
+
+  .process-item {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-text {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .right-img {
+    display: flex;
+    
+    gap: 10px;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+    place-items: center; /* Centers grid items */
+    align-self: center; /* Centers the entire grid container vertically */
+    justify-self: center; /* Centers the grid container horizontally */
+  }
+
+  .right-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Navigation adjustments */
+  .navlinks.active {
+    width: 200px;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navlinks li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Footer adjustments */
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .row.align-items-center {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Additional adjustments for extra small screens */
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .process-item {
+    max-width: 320px;
+  }
+
+  
+
+  .profile1, .profile2, .profile3 {
+    max-width: 320px;
+  
+  }
+
+  .profile1 img, .profile2 img, .profile3 img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin-right: 0px;
+    
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+/* iPad and Tablet specific styles for profiles */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .profiles {
+    margin: 40px auto;
+    max-width: 90%;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .profile1, .profile2, .profile3 {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Profile image styling */
+  .profile1 img, .profile2 img, .profile3 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevents image from shrinking */
+    align-self: center;
+  }
+
+  /* Text content styling */
+  .profile1-right, .profile2-right, .profile3-right {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .profile1-right h3, .profile2-right h3, .profile3-right h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+
+  .profile1-right p, .profile2-right p, .profile3-right p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+
+  /* Button styling */
+  .profile1 button, .profile2 button, .profile3 button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: auto;
+    margin-top: 15px;
+  }
+}
+
+/* iPad Mini specific adjustments */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .profile1, .profile2, .profile3 {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .profile1 img, .profile2 img, .profile3 img {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+/* iPad Pro specific adjustments */
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .profile1, .profile2, .profile3 {
+    max-width: 700px;
+  }
+}
+
+/* Portrait orientation specific adjustments */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .profiles {
+    padding: 0 30px;
+  }
+
+  .profile1, .profile2, .profile3 {
+    padding: 25px;
+  }
+}
