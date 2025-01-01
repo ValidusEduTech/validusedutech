@@ -101,7 +101,7 @@ html, body {
  }
 
  .register_div{
-    width: 400px;
+    width: 250px !important;
     display: flex;
     flex-direction: column;
     background-color: #A21E1F;
@@ -110,7 +110,7 @@ html, body {
     color: white;
     justify-content: center;
     border-radius: 10px;
-    height: 200px;
+    height: 200px !important;
     
  }
 
@@ -552,6 +552,7 @@ html, body {
   color: white;
   
 }
+
 .connector {
   position: absolute;
   width: 3px; /* Thickness of the line */
@@ -560,6 +561,8 @@ html, body {
   left: 48px; /* Center of the circle */
    /* Behind the circle */
 }
+
+
 .section:first-child .connector {
   top: 50%; /* Line starts halfway for the first circle */
 }
@@ -831,6 +834,27 @@ font-style: normal;
       opacity: 0.3; /* Further reduce opacity on very small screens */
   }
 }
-.navbar-nav {
-    gap : 0rem !important;
+
+.connector {
+  position: absolute;
+  width: 3px;
+  background-color: white;
+  height: calc(100%+40px); /* Adjusted height to properly connect circles */
+  left: 48px;
+  top: 100px; /* Position starts from bottom of circle */
+  z-index: 0; /* Ensure connector stays behind circles */
+}
+
+.section:first-child .connector {
+  top: 100px; /* Start from bottom of first circle */
+}
+
+.section:last-child .connector {
+  display: none;
+}
+
+/* Add z-index to circle-icon to ensure it stays above connector */
+.circle-icon {
+  z-index: 1;
+  position: relative;
 }
