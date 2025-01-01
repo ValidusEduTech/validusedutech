@@ -277,4 +277,6 @@ display: flex;
 justify-content: center;
 gap: 2rem;
 }
-
+.navbar-nav{
+  align-items: flex-start;
+}
